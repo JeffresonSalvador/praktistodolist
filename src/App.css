@@ -33,5 +33,10 @@
 }
 a{
 
-  
+
+}
+.listahan{
+    font-size: 3em;
+    list-style: none;
+    text-align: center;
 }
