@@ -1,30 +1,45 @@
-import React from 'react'
+import React, { Component } from "react";
 
- 
- function clickHandler(){
-   
- }
+class List extends Component {
+    constructor(props) {
+        super(props);
 
 
-const List = props => (
-  <ul >
-    {
-        
-      props.items.map((item, index) =>{
+
+        this.createTasks = this.createTasks.bind(this);
        
-       function clickHandler(){
-            props.deleted(index);
-      }
-     
-
-
-      return <div>
-        <li  onClick={clickHandler}className="listahan" key={index}>{item}</li>
-       </div>
-     
-      })
     }
-  </ul>
-)
+
+    createTasks(item) {
+
+         return (
+         <li  
+            key={item.key}>{item.text}
+            <button className="close"onClick={() =>
+               this.delete(item.key)}>X</button>
+            </li>
+          
+         )
+     }
+
+        delete(key){
+         console.log("Key is:" + key);
+         this.props.delete(key);
+       }
+
+    render () {
+
+        var todoEntries = this.props.entries;
+        var listItems = todoEntries.map(this.createTasks);
+
+        return (
+            <ul className="listahan">
+
+                {listItems}
+                
+            </ul>
+        );
+    }
+}
 
 export default List;

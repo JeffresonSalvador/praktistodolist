@@ -1,42 +1,83 @@
+*{
+  margin: 0 auto;
+  padding: 0;
+}
 .App {
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-a{
-
-
+  
 }
 .listahan{
-    font-size: 3em;
+    font-size: 2em;
     list-style: none;
-    text-align: center;
+    text-align: left;
+    
+}
+.content input{
+  width: 165px;
+  padding: 10px;
+  margin: 20px;
+  text-align: center;
+}
+.content button{
+  padding: 10px;
+  width: 80px;
+}
+.Todolist{
+  display:flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+.header{
+  background: black;
+  color: white;
+  padding: 5px;
+}
+li{
+  margin: 10px 0px;
+  border: 1px solid rgb(31, 29, 29);
+  padding-left: 20px;
+}
+ul{
+  text-align: center;
+
+}
+.exit{
+  text-align: center;
+  float: right;
+  background: red;
+  padding: 0px;
+  margin: 0px;
+  font-size: .2em;
+  overflow: auto;
+  border: 1px solid black;
+  font-weight: 300;
+  font-family: Arial, sans-serif;
+  display: inline-block;
+
+}
+.close {
+  background: red;
+  float:right;
+  opacity: 0.3;
+  padding: 0px;
+  margin: 0px;
+  font-weight: bolder;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  
+  height: 33px;
+  width: 2px;
+  background-color: #333;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
 }

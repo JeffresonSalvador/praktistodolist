@@ -5,19 +5,19 @@ import './App.css';
 import FunctionClick from './component/FunctionClick';
 import classclick from './component/ClassClick';
 import ClassClick from './component/ClassClick';
-import EventBind from './EventBind';
+import EventBind from './component/EventBind';
 import ParentComponent from './component/ParentComponent';
-
 import Message from './component/Message';
 import TodoList from './component/TodoList';
+
 
 function App() {
   return (
     <div className="App">
 
-
-      <TodoList/> 
-      {/* <ClassClick ></ClassClick> */}
+     
+       
+     <ClassClick ></ClassClick>
 
       {/* <Message/> */}
 

@@ -5,7 +5,7 @@ class TodoItems extends Component {
         super(props);
 
         this.createTasks = this.createTasks.bind(this);
-
+        
     }
 
     createTasks(item) {
@@ -25,7 +25,7 @@ class TodoItems extends Component {
         var listItems = todoEntries.map(this.createTasks);
 
         return (
-            <ul className="theList">
+            <ul className="listahan">
                 {listItems}
             </ul>
         );

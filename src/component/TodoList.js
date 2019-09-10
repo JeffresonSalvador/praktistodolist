@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import TodoItems from "./TodoItems";
-import "./TodoList.css";
+
 
 
 class TodoList extends Component {
@@ -55,7 +55,7 @@ deleteItem(key) {
 
     render() {
         return (
-            <div className="todoListMain">
+            <div className="app">
                 <div className="header">
                     <form onSubmit={this.addItem}>
                         <input ref={(a) => this._inputElement = a}
