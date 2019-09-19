@@ -81,3 +81,19 @@ ul{
 .close:after {
   transform: rotate(-45deg);
 }
+@media only screen and (max-width: 500px) {
+  body {
+    background-color: lightblue;
+  }
+  .row{
+      display:flex;
+      flex-direction: column;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .listahan {
+   margin-left: 100px;
+   margin-right: 100px;
+  }
+  
+}

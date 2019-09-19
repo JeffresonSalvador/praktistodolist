@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './component/Test.css';
 
 import FunctionClick from './component/FunctionClick';
 import classclick from './component/ClassClick';
@@ -9,13 +10,14 @@ import EventBind from './component/EventBind';
 import ParentComponent from './component/ParentComponent';
 import Message from './component/Message';
 import TodoList from './component/TodoList';
+import Test from './component/Test';
 
 
 function App() {
   return (
     <div className="App">
 
-     
+    
        
      <ClassClick ></ClassClick>
 

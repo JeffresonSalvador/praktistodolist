@@ -1,26 +1,26 @@
 import React from 'react'
 
 
-// function Greet(){
+function Test(){
 
-//     return <h1>Hello po</h1>
+    
+    return <h1 >TodoList Application</h1>
+}
 
-// }
-
-    const Greet = (props) =>{
-        const {name,heroname} = props
+    // const Greet = (props) =>{
+    //     const {name,heroname} = props
         
-        return  (
-            <div>
-                <h1> 
-                    hello {name} a.k.a {heroname}
+    //     return  (
+    //         <div>
+    //             <h1> 
+    //                 hello {name} a.k.a {heroname}
                     
-                </h1>
-                {props.children}
+    //             </h1>
+    //             {props.children}
 
-            </div>
+    //         </div>
         
-        )
-    } 
+    //     )
+    // } 
 
-export default Greet;
+export default Test;
