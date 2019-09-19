@@ -42,6 +42,10 @@ ul{
   text-align: center;
 
 }
+.listahan {
+  margin-left: 100px;
+  margin-right: 100px;
+ }
 .exit{
   text-align: center;
   float: right;
