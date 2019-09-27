@@ -13,12 +13,15 @@ class List extends Component {
     createTasks(item) {
 
          return (
-         <li  
-            key={item.key}>{item.text}
+    <div className="laman">
+         <li key={item.key} >
+            
+            <h3 className="sulat">{item.text}</h3>
+           
             <button className="close"onClick={() =>
-               this.delete(item.key)}>X</button>
-            </li>
-          
+                this.delete(item.key)}>X</button>
+            </li> 
+           </div>
          )
      }
 

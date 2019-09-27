@@ -50,8 +50,7 @@ class ClassClick extends React.Component {
       //to delete item
       
     deleteItem(key) {
-      console.log("Key: in deleteItem: " + key);
-      console.log("Items at delete:" + this.state.items);
+      
 
       var filteredItems = this.state.items.filter(function (item){
       return(item.key !== key)
