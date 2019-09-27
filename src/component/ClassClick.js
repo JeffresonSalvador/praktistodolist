@@ -68,8 +68,12 @@ class ClassClick extends React.Component {
             <div className="header">
 
                 <h1>
-                  TodoList Application
+                <span class="one">TODO</span>
+                <br/>
+                <span class="two">save wayuwanna do</span>
                 </h1>
+                
+               
             </div>
             <div>
             <form className="Todolist"  onSubmit={this.addItem}>
