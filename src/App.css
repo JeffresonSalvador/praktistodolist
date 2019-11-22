@@ -1,181 +1,37 @@
 *{
-  margin: 0 ;
-  padding: 0;
-  background-image: radial-gradient(rgb(116, 42, 42), rgb(116, 33, 57));
-  color: white;
-  overflow: auto;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
-.App {
-  text-align: center;
-  
+* :not(input){
+    text-align: center;
 }
-.listahan{
-    font-size: 2em;
-    list-style: none;
-    text-align: left;
-    
+form{
+    padding: 20px 0px;
+    background: rgb(102, 84, 84);
 }
-.content input{
-  width: 165px;
-  padding: 10px;
-  margin: 20px;
- 
+form label{
+    padding: 20px;
 }
-.content button{
-  padding: 10px;
-  width: 80px;
-}
-.Todolist{
-  display:flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-}
-.header h1{
-  background: radial-gradient(rgb(16, 64, 104), rgb(23, 12, 73));;
-  color: radial-gradient(rgb(206, 206, 206), rgb(96, 77, 180));;
-  padding: 40px;
-  
-}
-.one{
-  background: none;
-  font-size: 2.5em;
- }
- .two{
-   background: none;
-   font-size: 1em;
- }
- .header{
-  
- }
-
-
 li{
-  margin: 10px 0px;
-  
-  padding-left: 20px;
-  display:flex;
-  text-align: start;
-}
-ul {
-  margin: 0;
-  padding: 0;
-}
-ul li:nth-child(odd) {
-  background: none;
-}
-ul li:nth-child(odd):hover {
-  background: radial-gradient(rgba(16, 64, 104,.8), rgba(23, 12, 73,.8));
-  
-}
-li :hover :not(.close){
-  background: radial-gradient(rgba(16, 64, 104,.8), rgba(23, 12, 73,.8));
-
+    list-style: none;
+    background: rgb(13, 80, 102);
+    padding: 20px 0px;
+    margin: 0px;
+    font-size: 2em;
 }
 
-
-
-.sulat{
- text-align: start;
-}
-
-.listahan {
-  margin-left: 100px;
-  margin-right: 100px;
-  position: relative;
- }
- ul li {
-  cursor: pointer;
-  position: relative;
-  padding: 12px 8px 12px 40px;
-  
-  font-size: 18px;
-  transition: 0.2s;
-
-  /* make the list items unselectable */
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-.sulat:hover{
-  background: radial-gradient(rgba(16, 64, 104,.8), rgba(23, 12, 73,.8));
-  
-}
-.exit{
-  
-  float: right;
-  background: red;
-  padding: 0px;
-  margin: 0px;
-  font-size: .2em;
-  overflow: auto;
-  border: 1px solid black;
-  font-weight: 300;
-  font-family: Arial, sans-serif;
-  display: inline-block;
+li :hover{
+    background: rgb(109, 12, 12);
+    color: white;
+    margin: 0px;
 
 }
-.close {
-  background: radial-gradient(rgb(16, 64, 104), rgb(23, 12, 73));;
-/*   
-  height: 50px;
-  
-  
-  margin: 0px;
-  width: 50px;
-  font-weight: bolder; */
-  opacity: 0.5;
-  position: absolute;
-  right: 0;
-  top: 0;
-  padding: 12px 16px 12px 16px;
-  border-radius: 98%;
+h1{
+    background: #222;
+    color: white;
+    padding: 20px;
 }
-h3{
-  background: none;
-  
-}
-.close:hover {
-  opacity: 2;
-}
-.close:before, .close:after {
-  position: absolute;
-  left: 15px;
-  
-  height: 33px;
-  width: 2px;
-  background-color: #333;
-}
-.close:before {
-  transform: rotate(45deg);
-}
-.close:after {
-  transform: rotate(-45deg);
-}
-@media only screen and (max-width: 500px) {
-  body {
-    background-color: lightblue;
-  }
-  .row{
-      display:flex;
-      flex-direction: column;
-      margin: 10px 0;
-    align-items: stretch;
-  }
-  li{
-    display:flex;
-  }
-}
-@media only screen and (max-width: 1024px) {
-  .listahan {
-    margin-top: 30px;
-   margin-left: 100px;
-   margin-right: 100px;
-  }
-  
-}
-.laman{
- 
+@media {
+    display: flex;
+
 }

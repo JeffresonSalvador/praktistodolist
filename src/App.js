@@ -1,65 +1,50 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import './component/Test.css';
+import React,{useState}  from 'react'
 
-import FunctionClick from './component/FunctionClick';
-import classclick from './component/ClassClick';
-import ClassClick from './component/ClassClick';
-import EventBind from './component/EventBind';
-import ParentComponent from './component/ParentComponent';
-import Message from './component/Message';
-import TodoList from './component/TodoList';
-import Test from './component/Test';
+import '../src/App.css'
+import Heading from './component/Heading'
+import StudentList from './component/StudentList';
+import StudentForm from './component/StudentForm';
+import UserGreeting from './component/UserGreeting';
 
+function App(){
+    const [students,setStudents] = useState ([
+      {
+        id: 1,
+        name: 'jeff',
+        year: 1
+      },
+      {
+        id: 2,
+        name: 'jen',
+        year: 2
+      },
+      {
+        id: 3,
+        name: 'lenar',
+        year: 3
+      },
 
-function App() {
-  return (
-    <div className="App">
+    ]);
 
-    
-       
-     <ClassClick ></ClassClick>
+    const addStudent = (student)=>{
+      setStudents([...students,student])
 
-      {/* <Message/> */}
+    }
+   
 
-      
-      {/* <ParentComponent></ParentComponent> */}
-      {/* <EventBind></EventBind> */}
-
-      {/* <ClassClick></ClassClick> */}
-      
-      {/* <p>
-
-      <Message/>
-      <Counter/>                        
-
-      hello
-      <Greet name = "jeffpogi" heroname="SuperPogi">
-        <p>this is superhuman</p>  </Greet>
-
-      <Welcome name = "jeffpogi" heroname="SuperPogi">
-      <p>this is superhuman</p>
-      </Welcome>
-
-
-      </p>
-       */}
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" /> */}
-
-
-          {/* <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header> */}
+    return(
+    <div>
+      <ul>
+        <UserGreeting/>
+        {/* <Heading/>
+        <StudentForm addStudent = {addStudent}/>
+        <StudentList students = {students}/> */}
+        </ul>
+        
     </div>
   );
-}
 
+
+
+}
 export default App;
