@@ -16,6 +16,6 @@ function StudentList({students}){
     )
 
 
-//wowwin
+
 }
 export default StudentList;
